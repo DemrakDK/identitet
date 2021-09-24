@@ -1,0 +1,118 @@
+:root {
+    --clr-header: #161616;
+    --clr-background: #161616;
+    --clr-input: rgb(191, 191, 191);
+    --clr-submit: rgb(191, 191, 191);
+    --clr-submithover: rgb(179, 179, 179);
+}
+
+body {  
+    background: none !important;
+}
+
+.main-header {
+    border-top: solid 7vh var(--clr-header);
+    border-radius: 20.5px;
+    box-shadow: 0px 8px 15px -6px rgba(0,0,0,0.4);
+}
+
+.main-header .header-text {
+    /* Position */
+    position: absolute;
+    top: 6.5%; /* Top og ned */
+    left: 50%; /* Venstre og ud */
+    transform: translate(-50%, -50%); /* Får den til at ceter */
+    font-size: 40;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.main-background {
+    /* Position */
+    position: absolute;
+    top: 50%; /* Top og ned */
+    left: 50%; /* Venstre og ud */
+    transform: translate(-50%, -50%); /* Får den til at ceter */
+    width: 45vh;
+    height: 50vh;
+    background-color: var(--clr-background);
+    border-radius: 20.5px;
+}
+
+.list-input {
+    /* Position */
+    position: absolute;
+    top: 25vh; /* Top og ned */
+    left: 50%; /* Venstre og ud */
+    transform: translate(-50%, -50%); /* Får den til at ceter */
+    text-align: center;
+}
+
+.list-input .input-reg {
+    margin-top: 2vh;
+    background-color: var(--clr-input);
+    border-radius: 12.5px;
+    border-style: solid;
+    border-color: #2980b9;
+    height: 6vh;
+    width: 32vh;
+    border-radius: 12.5px;
+}
+
+.list-input .input-reg:focus {
+    outline: 0;
+}
+
+::placeholder {
+    font-size: 2vh;
+    color: #737373;
+    font-weight: bold;
+}
+
+.main-background .submit {
+    width: 21vh;
+    height: 6vh;
+    background-color: var(--clr-submit);
+    border: solid 0.3vh #27ae60;
+    border-radius: 12.5px;
+    font-size: 2.8vh;
+    transition: 0.3s;
+    color: #000000;
+    font-weight: bold;
+}
+
+.main-background .submit:hover {
+    background-color: #27ae60;
+}
+
+.main-background .submit:focus {
+    outline: 0;
+    background-color: #27ae60;
+}
+
+.swal-modal {
+    background-color: #5e5e5e !important;
+    outline: none;
+}
+
+.swal-title,
+.swal-text {
+    color: #fff !important;
+}
+
+.swal-button {
+    background-color: #8a8a8a !important;
+    transition: 0.3s;
+}
+
+.swal-button:hover {
+    background-color: #b4b4b4 !important;
+}
+
+.swal-icon--success:after, .swal-icon--success:before {
+    content: none !important;
+}
+
+.swal-icon--success__hide-corners { 
+    background-color: rgba(255, 255, 255, 0) !important;
+}
